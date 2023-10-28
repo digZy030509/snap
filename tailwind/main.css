@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+.header-section{
+    @apply flex justify-between items-center w-full px-10 py-[.6rem] relative
+}
+.nav-section{
+    @apply flex justify-center items-center gap-10
+}
+.h1-title{
+    @apply text-3xl font-bold mr-6 
+}
+.nav-links{
+    @apply text-lg font-medium px-2 py-2 hover:bg-slate-300 hover:bg-opacity-25 rounded-lg hidden sm:block
+}
+.btn-primary{
+    @apply text-lg font-medium px-2 py-2 hidden sm:block
+}
+.btn-secondary{
+    @apply text-lg font-medium px-2 py-2 border border-black rounded-lg hidden sm:block
+}
+
+/* Hero Section */
+.hero-section{
+    @apply flex w-full h-full justify-center items-start gap-11 px-24 py-24 max-sm:flex-col-reverse max-sm:px-4 max-sm:py-4
+}
+.main-content{
+    @apply w-2/3 mt-8 max-sm:w-full max-sm:text-center
+}
+.h1-content{
+    @apply text-8xl font-bold max-sm:text-2xl
+}
+.p-content {
+    @apply text-lg my-14 max-w-xl
+}
+.btn-content{
+    @apply text-lg font-medium px-4 py-2 border bg-slate-800 text-white rounded-lg hover:bg-white hover:text-black hover:border-black border
+}
+
+.img-content{
+    @apply flex justify-evenly items-center gap-10 w-2/3 mt-20 max-sm:w-full
+}
+
+.banner-content{
+    @apply w-1/2 max-sm:w-full
+}
+.banner-img{
+    @apply h-full w-full object-cover
+}
